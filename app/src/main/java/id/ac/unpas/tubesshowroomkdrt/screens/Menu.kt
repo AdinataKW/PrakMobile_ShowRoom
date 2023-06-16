@@ -11,9 +11,9 @@ enum class Menu(
     val icon: ImageVector,
     val route: String
 ) {
-    PENGELOLAAN_MOBIL(R.string.pengelolaan_mobil, Icons.Default.CarRental, "pengelolaan-mobil"),
+    PENGELOLAAN_MOBIL(R.string.pengelolaan_mobil, Icons.Default.LocalCarWash, "pengelolaan-mobil"),
     PENGELOLAAN_MOTOR(R.string.pengelolaan_motor, Icons.Default.TwoWheeler, "pengelolaan-motor"),
-    PENGELOLAAN_PROMO(R.string.pengelolaan_promo, Icons.Default.PriceCheck, "pengelolaan-promo");
+    PENGELOLAAN_PROMO(R.string.pengelolaan_promo, Icons.Default.Paid, "pengelolaan-promo");
 
     companion object {
         fun getTabFromResource(@StringRes resource: Int): Menu {
