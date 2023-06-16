@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'id.ac.unpas.tubesshowroomkdrt'
+    namespace 'id.ac.unpas.tubesdudaksil'
     compileSdk 33
 
     defaultConfig {
-        applicationId "id.ac.unpas.tubesshowroomkdrt"
+        applicationId "id.ac.unpas.tubesdudaksil"
         minSdk 26
         targetSdk 33
         versionCode 1
