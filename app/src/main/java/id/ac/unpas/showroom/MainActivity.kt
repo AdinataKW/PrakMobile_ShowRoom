@@ -1,36 +1,41 @@
-package id.ac.unpas.acilcars
+package id.ac.unpas.showroom
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import id.ac.unpas.acilcars.screens.PengelolaanShowRoom
-import id.ac.unpas.acilcars.ui.theme.ACILCARSTheme
-
+import dagger.hilt.android.AndroidEntryPoint
+import id.ac.unpas.showroom.screens.MainScreen
+import id.ac.unpas.showroom.screens.PengelolaanMobilScreen
+import id.ac.unpas.showroom.ui.theme.ShowroomTheme
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ACILCARSTheme {
+            ShowroomTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = MaterialTheme.colorScheme.background
                 ) {
-                    PengelolaanShowRoom()
+                    MainScreen()
                 }
             }
         }
     }
 }
+
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
-    ACILCARSTheme {
-        PengelolaanShowRoom()
+fun GreetingPreview() {
+    ShowroomTheme {
+        MainScreen()
     }
 }
