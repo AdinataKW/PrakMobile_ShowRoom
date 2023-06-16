@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_app_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name=".TubesShowroomKDRTApp"
+        android:name=".TubesDudaksil"
         android:theme="@style/Theme.TubesShowroomKDRT"
         tools:targetApi="31">
         <activity
