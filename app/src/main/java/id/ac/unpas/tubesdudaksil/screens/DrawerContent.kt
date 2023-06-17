@@ -58,7 +58,7 @@ fun DrawerContent(onClick: (String) -> Unit)
                     shape = RoundedCornerShape(4.dp),
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(5.dp),
+                        .padding(9.dp),
                     contentColor = Color.Black
                 ) {
                     Row (modifier =
@@ -68,7 +68,7 @@ fun DrawerContent(onClick: (String) -> Unit)
                         Icon(
                             menu.icon,
                             modifier =
-                            Modifier.height(32.dp).width(32.dp),
+                            Modifier.height(32.dp).width(55.dp),
                             contentDescription = null,
                             tint = Color.Unspecified)
                         Text(
@@ -81,5 +81,32 @@ fun DrawerContent(onClick: (String) -> Unit)
                 }
             }
         }
+
     }
-}
+    Column(modifier = Modifier.fillMaxWidth().padding(30.dp)) {
+        Row (modifier = Modifier.fillMaxWidth().padding(5.dp),
+            horizontalArrangement = Arrangement.Center) {
+            Text("KEL.3 - TEAM DUDAKSIL", modifier =
+            Modifier.height(32.dp).padding(2.dp),
+                fontSize = 18.sp,
+                fontWeight = FontWeight.SemiBold)
+        }
+        Row(modifier = Modifier.padding(2.dp)) {
+            Text(text = "Adinata Kusuma W - 203040158", fontWeight = FontWeight.Bold)
+        }
+        Row(modifier = Modifier.padding(2.dp)) {
+            Text(text = "Rahman Ramadan - 203040132", fontWeight = FontWeight.Bold)
+        }
+        Row(modifier = Modifier.padding(2.dp)) {
+            Text(text = "Ryan Fanny Fadlyllah - 20304029 ", fontWeight = FontWeight.Bold)
+        }
+        Row(modifier = Modifier.padding(2.dp)) {
+            Text(text = "Nadia Nur Annisa - 203040107", fontWeight = FontWeight.Bold)
+        }
+        Row(modifier = Modifier.padding(2.dp)) {
+            Text(text = "Devi Indriawati - 203040039", fontWeight = FontWeight.Bold)
+        }
+
+    }
+
+    }
